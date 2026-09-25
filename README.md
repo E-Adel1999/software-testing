@@ -8,6 +8,21 @@ During the orientation, the core mindset of a successful QA engineer was establi
 
 ### Route QA Learning Roadmap
 
+1. SDLC & STLC
+2. Manual Testing
+3. ISTQB: ISTQB Foundation Level Exam Preparation
+4. Agile Methodologies
+5. Web Fundamentals
+6. Database Fundamentals & SQL
+7. Git & GitHub
+8. API (Application Programming Interface)
+9. Java Programming
+10. Web Automation
+11. Mobile Testing
+12. Performance Testing
+13. Security Testing (security testing + OWSAP Top 10)
+14. Interviews Preparation
+
 ### Orientation session (session 1) notes:
 
 1. good tester must know apis
