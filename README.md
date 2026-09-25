@@ -8,17 +8,17 @@ During the orientation, the core mindset of a successful QA engineer was establi
 
 ### Route QA Learning Roadmap
 
-### Orientation session notes:
+### Orientation session (session 1) notes:
 
-1. mafesh tester shater may3rfsh apis
-2. yaany eah api
-3. yaany eah restful
+1. good tester must know apis
+2. what is the meaning of apis?
+3. what is the meaning of restful
 4. test using postman tool
-5. man3raf yaany eah SQL w nt3alem SQL
-6. Java programming hanb2a intermediate msh advanced
-7. oop concepts, classes, objects
-8. advanced Java, exception handling
-9. git and github
-10. automation habeb el sha3b el routing
-11. el tester el shater ely bys2al kter
-12. b3d ma akhlas apis ana gahez a2dem 3ala positions
+5. what is the meaning of SQL? SQL will be covered during the course
+6. good tester must be Java intermediate to advanced
+7. Java oop concepts, classes and objects will be covered
+8. Advanced Java and exception handling will be covered
+9. git and github will be covered
+10. automation testing will be covered
+11. good tester asks meaningful questions frequently
+12. after apis topic is covered, we are ready for job applications filling
