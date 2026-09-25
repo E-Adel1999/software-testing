@@ -6,7 +6,7 @@ A structured knowledge base and code repository documenting my Software Testing 
 
 During the orientation, the core mindset of a successful QA engineer was established. The primary takeaway: **A great software tester must be intensely curious and consistently ask deep technical questions.**
 
-### Route QA Learning Roadmap
+### Software Testing Learning Roadmap
 
 1. SDLC & STLC
 2. Manual Testing
