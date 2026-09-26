@@ -64,17 +64,28 @@ In short, **verification** checks if you are building the **product right**, whi
 
 ### 3. Do Regression and Sanity checks happen before release, after release, or both?
 
-They happen **both before and after release**, but they serve slightly different purposes at each stage:
+They happen **exclusively before release**. They are critical gates in the testing cycle designed to validate a build prior to shipping it to production or end users, never after.
 
-### Before Release (In the Test Environment)
+#### Before Release (In the Test Environment)
 
-- **Sanity Test:** A quick, focused test performed on a new build to verify that a specific bug fix or minor feature works, and that the build is stable enough for deeper testing.
-- **Regression Test:** A comprehensive test suite executed after the sanity check passes to guarantee that the fixes didn't break surrounding features before the build is approved for production.
+- **Sanity Test:** A quick, focused test performed right after a new build arrives (usually containing a minor fix or small change). It acts as a gatekeeper step to quickly answer: _"Is this build even worth investing more testing effort into?"_
+- **Regression Test:** A comprehensive test suite executed throughout the development cycle after any code change (bug fix, new feature, or minor tweak) to guarantee that recent fixes didn't break surrounding, existing functionalities before QA sign-off.
 
-### After Release (In the Production Environment)
+#### Key Exceptions
 
-- **Post-Release Sanity Test:** Conducted immediately after deploying to live servers. Testers run a quick check on the critical paths to ensure the environment configured correctly and the app didn't break during deployment.
-- **Production Regression Test:** If the deployment was massive or a hotfix patch was applied directly to production, a targeted regression run is executed live to ensure no live user workflows are broken.
+- **Production Hotfixes:** If a critical bug is discovered in production, you will run sanity and regression checks again on the fix. However, this testing still happens entirely **before** that hotfix itself is released live to users.
+- **Staging Environments:** Regression tests can sometimes run post-deployment in a staging environment that mirrors production right before the final push. Conceptually, this is still considered **before release** because it occurs before the code reaches the end users.
+
+---
+
+### 🔄 The General Pipeline Order
+
+1. **Development:** Developer makes a change or bug fix.
+2. **Deployment (QA):** New build is deployed to the QA environment.
+3. **Smoke Test:** Verifies if the build is stable enough to test at all.
+4. **Sanity Test:** Verifies if the specific fixed area works.
+5. **Regression Test:** Verifies that nothing else in the system broke.
+6. **Release:** Build is approved and officially released to production/customers.
 
 ---
 
