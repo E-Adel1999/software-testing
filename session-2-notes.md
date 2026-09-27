@@ -78,7 +78,7 @@ They happen **exclusively before release**. They are critical gates in the testi
 
 ---
 
-### 🔄 The General Pipeline Order
+### The General Pipeline Order
 
 1. **Development:** Developer makes a change or bug fix.
 2. **Deployment (QA):** New build is deployed to the QA environment.
